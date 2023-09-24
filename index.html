@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Compute</title>
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="grid">
+      <h2 class="header">WHAT IS MY FINAL GPA?</h2>
+      <div class="clear">
+        <button onclick="clearscr()">
+          <i class="fa-solid fa-x"></i>
+          <h3>Clear</h3>
+        </button>
+      </div>
+      <div class="up-title">
+        <div class="title">
+          <p>1<sup>st</sup> Year GPA</p>
+        </div>
+        <div class="title">
+          <p>2<sup>nd</sup> Year GPA</p>
+        </div>
+      </div>
+      <div class="boxes">
+        <div class="box box-1">
+          <input class="num-1" type="number" min="1" max="5" />
+        </div>
+        <div class="box box-2">
+          <input class="num-2" type="number" min="1" max="5" />
+        </div>
+        <div class="box box-3">
+          <input class="num-3" type="number" min="1" max="5" />
+        </div>
+        <div class="box box-4">
+          <input class="num-4" type="number" min="1" max="5" />
+        </div>
+      </div>
+
+      <div class="bot-title">
+        <div class="title">
+          <p>3<sup>rd</sup> Year GPA</p>
+        </div>
+        <div class="title">
+          <p>4<sup>th</sup> Year GPA</p>
+        </div>
+      </div>
+
+      <div class="lower">
+        <button onclick="result()">Compute</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
